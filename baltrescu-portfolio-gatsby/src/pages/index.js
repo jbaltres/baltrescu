@@ -1,25 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../components/index.module.css"
 import HeroSection from "../components/HeroSection"
-
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-  { text: "Bilder", url: "images" },
-]
 
 // Um zu einer anderen Route zu gelangen muss man lediglich in Pages eine neue Datei erstellen und der Dateiname vor .js ist schon die neue Route Bsp. images.js = /images
 // Wie man einen Link zu den gemappten Links erstellt siehe oben.
@@ -29,10 +12,6 @@ const IndexPage = () => (
     <Seo title="Home" />
       <HeroSection />
       <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
       </p>
 
    

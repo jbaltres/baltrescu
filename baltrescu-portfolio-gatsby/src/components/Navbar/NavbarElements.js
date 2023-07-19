@@ -3,18 +3,21 @@ import {DiScala} from "react-icons/di"
 import {Link} from "gatsby"
 
 export const Nav = styled.nav`
-background: ${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,.9) 0%, rgba(255,255,255,0) 100%)"};
+background: ${({active}) => active ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)"};
+top: ${({active}) => active ? "0em" : "-5em"};
 height: 80px;
 display: flex;
 justify-content: center;
 align-items: center;
 font-size: 1rem;
 position: sticky;
-top: 0;
+
 z-index: 999;
+transition: all 2s ease-out;
 
 @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
+    background: ${({ click }) => (click ? "#fff" : "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)")};
+    top: 0;
     transition: .8s all ease;
 }
 `;
@@ -71,7 +74,8 @@ text-align: center;
         top: ${({ click }) => ( click ? "100%" : "-1000px") };
         opacity: 1;
         transition: all 1s ease;
-        background: #fff;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%)};
+
     }
 `;
 
