@@ -140,6 +140,10 @@
 
 ## Babyschlummerfein
 
+1. Neue Seite unter Pages einrichten
+
+2. Affiliate Links einbinden
+
 ## Turkio
 
 ## Plore
@@ -159,6 +163,8 @@
 ### Erinnerungen an Geburtstage oder Termine
 
 ## KanBan Board
+
+## Around Spaces
 
 # JS Funktions
 
@@ -299,3 +305,7 @@
 ## Installieren
 
 ## [Template] bearbeiten
+
+# Git
+
+## Git-Branches
