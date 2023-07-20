@@ -104,6 +104,21 @@
 
 ## CRUD
 
+### Backend
+
+1. Einen Ordner Suchen wo der Server laufen kann
+2. Ein React Project aufsetzen. ( 1 & 2 kann man für die Übersicht auch in server und client im gleichen Ordner erstellen --> geht schneller wenn man zwischen den Ordnern springen möchte)
+3. Kommando `npm init` um node.js in Server-Ordner zu installieren
+4. `npm install express mongoose` in Server-Ordner installieren weil man es braucht -/-
+   Wenn eine SQL Datenbank installiert werden soll, dann `mysql2 und cors` auch noch installieren
+5. index.js erstellen (In Datei sind beschreibende Kommentare hinterlegt)
+6. Mit `node index.js` prüfen ob eine Verbindung aufgebaut werden kann. Außerdem kann auf localhost:[port] die Willkommensnachricht angeschaut werden, wenn eine hinterlegt ist.
+7. Datenbank erstellen (Hostinger dieses Mal)
+8. Create new Database
+9.
+
+### Frontend
+
 ## mongoose
 
 ## axios
@@ -213,6 +228,8 @@
 # TypeScript
 
 # Styling
+
+## box-shadow
 
 ## Grid
 

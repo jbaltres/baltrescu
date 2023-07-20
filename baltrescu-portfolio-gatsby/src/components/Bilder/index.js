@@ -15,6 +15,10 @@ import bild12 from "../../images/bild12.jpg";
 
 function Bilder() {
 
+    // Einen Array mit den Variablen bilden, welche aus dem images Ordner importiert wurden.
+    // Danach die Bilder in einer .map Funktion mappen und innerhalb des Img Tags stylen.
+    // Styled Components aus bilderElements importieren und die dort gestylten Komponenten hier im Gerüst an der richtigen Stelle und in der richtigen Struktur aufrufen.
+ 
     const bilder= [bild1, bild2, bild3, bild4, bild5, bild6, bild7, bild8, bild9, bild10, bild11, bild12]
     
     return(

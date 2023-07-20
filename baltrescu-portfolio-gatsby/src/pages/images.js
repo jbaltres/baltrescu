@@ -19,6 +19,8 @@ const Headline = styled.h1`
 }
 `;
 
+// Die Funktion "Bilder" aus index.js importieren und aufrufen.
+
 const Images = () => (
   <Layout>
     <Seo title="Bilder"/>
