@@ -32,6 +32,12 @@
 
 ### Bilder mit Grid in richtigen Größen
 
+1. Bilder in den Images Ordner ziehen
+2. Ein Array aus den Bildern bilden und in das richtige Format bringen
+3. Styling von Grid und Images durchführen
+4. Testen
+5. Bei github über Git pushen.
+
 ### Größe vs. Auflösung
 
 ### Paralax
@@ -141,8 +147,8 @@
 ## Babyschlummerfein
 
 1. Neue Seite unter Pages einrichten
-
-2. Affiliate Links einbinden
+2. Seite nach Layout von Relife strg+c und strg+v kopieren und bearbeiten
+3. Affiliate Links einbinden
 
 ## Turkio
 
