@@ -233,6 +233,8 @@
 
 ## Color-changing Background with Keyframes
 
+## Antstatt Inputfelder einen Balken an welchem man links und rechts schieben kann und Größen damit verstellen
+
 ## Grid
 
 ## Flexbox

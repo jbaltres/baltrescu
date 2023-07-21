@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flick1, Flick2,Wrapper, Para, Rahmen, Wrapper2, Para2,Para3, Para4, Para5, Para6} from "./IntroElementsFixedFont2"
+import { Flick1, Flick2,Wrapper, Para, Rahmen, Para2,Para3, Para4, Para5, Para6} from "./IntroElementsFixedFont2"
 
 
 function fixedFontIntro() {

@@ -45,6 +45,9 @@ return(
                     <NavItem>
                         <NavLinks to="/page-2">Seite 2</NavLinks>
                     </NavItem>
+                    <NavItem>
+                        <NavLinks to="/komponente">Komponenten</NavLinks>
+                    </NavItem>
                 </NavMenu>
             </NavbarContainer>
         </Nav>

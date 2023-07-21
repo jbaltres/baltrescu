@@ -2,14 +2,13 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import Components from "../components/Component"
-
-
-// Die Funktion "Bilder" aus index.js importieren und aufrufen.
+import { Link } from "gatsby"
 
 const komponente = () => (
   <Layout>
     <Seo title="Komponente"/>
-    <Components />
+    <Components bgcolortop={"wheat"}/>
+    <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
 

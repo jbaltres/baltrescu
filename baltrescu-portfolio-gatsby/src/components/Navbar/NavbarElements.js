@@ -39,10 +39,12 @@ text-decoration: none;
 font-size: 1.5rem;
 display: flex;
 align-items: center;
+font-family: Permanent Marker;
 `;
 
 export const NavIcon = styled(DiScala)`
 margin: 0 .5rem 0 2rem;
+font-family: Permanent Marker;
 `;
 
 export const MobileIcon = styled.div`
@@ -86,7 +88,7 @@ align-items: center;
 text-decoration: none;
 padding: .5rem 1rem;
 height: 100%;
-font-family: "Ubuntu", sans-serif;
+font-family: "Permanent Marker", sans-serif;
 
 @media screen and (max-width: 960px){
         text-align: center;
