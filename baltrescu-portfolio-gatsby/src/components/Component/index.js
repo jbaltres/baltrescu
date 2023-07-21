@@ -2,12 +2,54 @@ import React from 'react'
 import BackgroundFunction from './BackgroundColor'
 import InteractiveComponent from './InteractiveKomponent'
 import { styled } from 'styled-components';
+import ObjectDisplayFunction from './ObjectDisplay';
+import ObjectDisplayWithMapFunction from './ObjectDisplayWithMap';
 
 
 // 1 Eine Komponente erstellen, bei welcher man als Props die Farbe definieren kann
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
+// 3 Hier ein Objekt erstellen und es an die ObjectDisplay Komponente übergeben, welche dann hier erscheinen sollen
+// 4 Hier ein Array erstellen und es in ObjectDisplayWithMap Komponente übergeben, welche dann hier erscheinen soll.
 
-const OL = styled.ol`
+// Object für Aufgabe 3
+const myObj = {
+    name: 'Ross',
+    headline: "Erster Blog beitrag",
+    text: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    bewertung: "⭐️⭐️⭐️⭐️⭐️",
+    meta: {
+      minutesWriting: 20,
+      minutesProcrastinating: 0,
+    }
+  };
+
+  // Array für Aufgabe 4
+const obj1 = {
+    author: 'Jürgen',
+    headline: "Erster Blog beitrag",
+    text: "Das Philosophische Chamaeleon wird die Welt verändern",
+    bewertung: "⭐️⭐️⭐️⭐️⭐️",
+    };
+
+const obj2 = {
+    author: 'Baltrescu',
+    headline: "Reisetagebuch",
+    text: "Deutschland, Schweden, Usbekistan. Mit mir erfahrt Ihr Alles",
+    bewertung: "⭐️⭐️⭐️⭐️",
+        };
+
+const obj3 = {
+    author: 'FDt',
+    headline: "Tiere sind die besseren Menschen",
+    text: "Hunde sind toll, Katzen sind aber auch ok",
+    bewertung: "⭐️",
+                };              
+
+  const myArr = [obj1, obj2, obj3]
+
+
+
+const Ol = styled.ol`
 margin: 100px;
 font-family: Avenir !important;
 `;
@@ -32,7 +74,7 @@ font-size: 26px;
 function Components({bgcolortop}) {
   return (
     <>
-    <OL>
+    <Ol>
         <li>States</li>
         <li>ChangeEvents und Funktionen</li>
         <li>Forms/Inputfields</li>
@@ -48,10 +90,10 @@ function Components({bgcolortop}) {
         <li>Buttons with onClick Functio</li>
         <li>Buttons that sends sth. to APi</li>
         <li>Links Auswärts und Onpage</li>
-    </OL>
+    </Ol>
 
     <Wrapper>
-        <Text>Square Komponente welche über Props im Code angegeben werden kann !</Text>
+        <Text>1. Square Komponente welche über Props im Code angegeben werden kann !</Text>
     </Wrapper>
     <br/>
     <Wrapper>
@@ -65,9 +107,21 @@ function Components({bgcolortop}) {
     <br/>
     <br/>
     <Wrapper2>
-        <Text>Square Komponente welche interaktiv über die Inputfelder angegeben werden kann.</Text>
+        <Text>2. Square Komponente welche interaktiv über die Inputfelder angegeben werden kann.</Text>
     <br/>
     <InteractiveComponent />
+    </Wrapper2>
+    <Wrapper2>
+        <Text>3. Inhalte aus einem Objekt erscheinen lassen</Text>
+    <br/>
+    <ObjectDisplayFunction object={myObj}/>
+    <br></br>
+    </Wrapper2>
+    <Wrapper2>
+        <Text>4. Inhalte aus einem Array, gefüllt mit Objekten anzeigen lassen</Text>
+    <br/>
+    <ObjectDisplayWithMapFunction array={myArr}/>
+    <br></br>
     </Wrapper2>
     </>
   )
