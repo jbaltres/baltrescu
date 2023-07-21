@@ -1,32 +1,16 @@
 import styled from "styled-components"
 
-export const Wrapper = styled.div`
-background-color: #111111;
-color: #cccccc;
-height: 100vh;
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
-`;
-
-export const Para = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
-
-    animation: t-animation 8s;
-
-@keyframes t-animation {
-0% {opacity: 0;}
-30% {opacity: 1;}
-70% {opacity: 1;}
-100% {opacity: 0;}
-}
-
+export const Wrapper2 = styled.div`
+    background-color: #111111;
+	color: #cccccc;
+	background-size:100%;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    color:#fff;
+    text-align:center;
+    width:90%;
+    margin:auto;
+    padding:25% ;
 
 &:hover {
 }
@@ -35,73 +19,62 @@ export const Para = styled.div`
 }
 `;
 
-export const Para2 = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
+  
+export const Div = styled.div`
+    position:absolute;
+    opacity:0;
+    overflow:hidden;
+    left:10vw;
+    width:80vw;
+    line-height:1.2em;
+	font-size: 4em;
+    animation: rotate-word1 8s;
 
-    animation: t-animation 8s;
-    animation-delay: 6s;
+	&:nth-child(even){
+		@keyframes rotate-word1 {
+		0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+		3% { transform: translateX(0);filter:blur(0px);transform:scale(.9);opacity: 1}
+		12% {  transform: translateX(0);filter:blur(0px);transform:scale(1);opacity: 1}
+		13% {transform: translateY(0);opacity: 1}
+		13.2% {transform: translateY(-200px) translateX(200px);opacity: 1}
+		13.4% {transform: translateY(-100px);opacity: 1}
+		13.6% {transform: translateY(0);opacity: 1}
+		13.8% {transform: translateY(300px);opacity: 1}
+		14% {transform: translateY(0);opacity: 1}
+		
+		68% {transform: translateY(0);opacity: 1}
+		69% {transform: translateY(300px);opacity: 1}
+		70% {transform: translateY(0);opacity: 1}
+		80% {  transform: translateX(0);filter:blur(0px);transform:scale(1);opacity: 1}
+		90% {  transform: translateX(0);filter:blur(10px);transform:scale(1.2);opacity: 0;}
+		100% { opacity: 0}
+  }
+		}
 
-@keyframes t-animation {
-0% {opacity: 0;}
-30% {opacity: 1;}
-70% {opacity: 1;}
-100% {opacity: 0;}
-}
+    @keyframes rotate-word1 {
+		0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+		3% { transform: translateX(0);filter:blur(0px);transform:scale(.9);opacity: 1}
+		12% {  transform: translateX(0);filter:blur(0px);transform:scale(1);opacity: 1}
+		13% {transform: translateY(0);opacity: 1}
+		13.2% {transform: translateY(200px);opacity: 1}
+		13.4% {transform: translateY(-100px);opacity: 1}
+		13.6% {transform: translateY(0);opacity: 1}
+		13.8% {transform: translateY(300px);opacity: 1}
+		14% {transform: translateY(0);opacity: 1}
+		
+		68% {transform: translateY(0);opacity: 1}
+		69% {transform: translateY(300px);opacity: 1}
+		70% {transform: translateY(0);opacity: 1}
+		80% {  transform: translateX(0);filter:blur(0px);transform:scale(1);opacity: 1}
+		90% {  transform: translateX(0);filter:blur(10px);transform:scale(1.2);opacity: 0;}
+		100% { opacity: 0}
+  }
 
-
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
-`;
-
-export const Para3 = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
-
-    animation: t-animation 8s;
-    animation-delay: 12s;
-
-@keyframes t-animation {
-0% {opacity: 0;}
-30% {opacity: 1;}
-70% {opacity: 1;}
-100% {opacity: 0;}
-}
-
-
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
-`;
-
-export const Para4 = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
-
-    animation: t-animation 8s;
-    animation-delay: 26s;
-
-@keyframes t-animation {
-0% {opacity: 0;}
-30% {opacity: 1;}
-70% {opacity: 1;}
-100% {opacity: 0;}
-}
-
+    &:nth-child(2) { animation-delay: 8s}
+    &:nth-child(3) { animation-delay: 16s}
+    &:nth-child(4) { animation-delay: 24s}
+    &:nth-child(5) { animation-delay: 32s}
+    &:nth-child(6) { animation-delay: 40s}
 
 &:hover {
 }
@@ -110,131 +83,37 @@ export const Para4 = styled.div`
 }
 `;
 
-export const Para5 = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
-
-    animation: t-animation 8s;
-    animation-delay: 33s;
-
-@keyframes t-animation {
-0% {opacity: 0;}
-30% {opacity: 1;}
-70% {opacity: 1;}
-100% {opacity: 0;}
-}
-
-
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
-`;
-
-export const Para6 = styled.div`
-    font-size: 3em;
-	display: table-cell; 
-	vertical-align: middle;
-	text-align: center;
-    opacity: 0;
-
-    animation: end-animation 8s;
-	animation-delay: 39s;
+export const Div2 = styled.div`
+    position:absolute;
+    opacity:0;
+    overflow:hidden;
+    left:10vw;
+    width:80vw;
+    animation: end-animation2 8s;
+	animation-delay: 46s;
 	animation-fill-mode: forwards; 
+	text-align: center;
+	font-size: 4em;
 
-    @keyframes end-animation {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
-}
-
-
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
-`;
-
-export const Flick1 = styled.div`
-
-	width: 100%; 
-	height: 100%;
-	display: block;
-    animation: flicker 8s infinite;
-    top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
-	position: fixed; 
-	display: table;
-
-
-    @keyframes flicker {
-
-    20.1% {left:0px;top:0px;}
-	20.2% {left:-10px;top:-18px;}
-	20.3% {left:0px;top:0px;}
-     
-    
-
-	50.1% {left:0px;top:0px;}
-	50.2% {left:10px;top:8px;}
-	50.3% {left:0px;top:0px;}
-
-
-	90.1% {left:0px;top:0px;}
-	90.2% {left:-5px;top:3px;}
-	90.3% {left:0px;top:0px;}
-}
-
-   
-&:hover {
-}
-
-@media screen and (max-width: 960px){
+	@keyframes end-animation2 {
+		0% { opacity: 0;  transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+		3% { opacity: 1;  transform: translateX(0);filter:blur(0px);transform:scale(.9)}
+		12% { opacity: 1; transform: translateX(0);filter:blur(0px);transform:scale(1)}
+		13% {transform: translateY(0);opacity: 1}
+		13.2% {transform: translateY(200px);opacity: 1}
+		13.4% {transform: translateY(-100px);opacity: 1}
+		13.6% {transform: translateY(0);opacity: 1}
+		13.8% {transform: translateY(300px);opacity: 1}
+		14% {transform: translateY(0);opacity: 1}
+		60% {opacity: 1; filter:blur(1px)}
+		68% {transform: translateY(0);opacity: 1}
+		69% {transform: translateY(300px);opacity: 1}
+		70% {transform: translateY(0);opacity: 1}
+		80% { opacity: 1; transform: translateX(0);filter:blur(10px);transform:scale(1.2)}
+		100% { opacity: 1}
 }
 `;
 
-export const Flick2 = styled.div`
-
-	width: 100%; 
-	height: 100%;
-	display: block;
-    animation: flicker 8s infinite;
-    top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%;
-	position: fixed; 
-	display: table;
-
-
-    @keyframes flicker {
-
-    20.1% {left:0px;top:0px;}
-	20.2% {left:-10px;top:-18px;}
-	20.3% {left:0px;top:0px;}
-     
-    
-
-	50.1% {left:0px;top:0px;}
-	50.2% {left:10px;top:8px;}
-	50.3% {left:0px;top:0px;}
-
-
-	90.1% {left:0px;top:0px;}
-	90.2% {left:-5px;top:3px;}
-	90.3% {left:0px;top:0px;}
-}
-
-   
-&:hover {
-}
-
-@media screen and (max-width: 960px){
-}
+export const Rahmen = styled.div`
+  
 `;
