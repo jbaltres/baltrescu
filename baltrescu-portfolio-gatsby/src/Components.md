@@ -98,6 +98,23 @@
 
 ### MongoDB NoSQL
 
+- Den Server konfigurieren
+
+1. Einen Atlas Account erstellen
+2. E-Mail verifizieren
+3. Eine Datenbank mit M0 erstellen + Anweisungnen folgen
+4. Datenbank mit Connect und MongoDB Compass verbinden. Dafür URL kopieren.
+5. Im MongoDB Kompass eine Neue Datenbank erstellen
+6. Im Server über connect die richtige Datenbank in Atlas ansprechen
+7. Über /get ein Object erstellen
+8. beim refreshen von localhost:[port] wird ein neuer Eintrag generiert welcher in Kompass eingetragen wird.
+
+- Den Client Konfigurieren
+
+1. Eine Komponente erstellen, bei welcher die values in States gespeichert werden und an das Backend geschickt werden können.
+2. Einen Button und "AddToList" Funktion erstellen, welche die Daten ans Backend sendet
+3. `npm install axios` ein Package welches das senden an das Backend ermöglicht
+
 ### MySQL SQL
 
 ## MERN
@@ -113,7 +130,8 @@
    Wenn eine SQL Datenbank installiert werden soll, dann `mysql2 und cors` auch noch installieren
 5. index.js erstellen (In Datei sind beschreibende Kommentare hinterlegt)
 6. Mit `node index.js` prüfen ob eine Verbindung aufgebaut werden kann. Außerdem kann auf localhost:[port] die Willkommensnachricht angeschaut werden, wenn eine hinterlegt ist.
-7. Datenbank erstellen (Hostinger dieses Mal)
+7. Datenbank erstellen (MongoDB Atlas)
+   --> Atlas Account erstellen --> bei Mongo DB weiterlesen
 8. Create new Database
 9.
 

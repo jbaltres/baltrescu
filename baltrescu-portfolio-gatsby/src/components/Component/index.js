@@ -10,6 +10,11 @@ import ObjectDisplayWithMapFunction from './ObjectDisplayWithMap';
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
 // 3 Hier ein Objekt erstellen und es an die ObjectDisplay Komponente übergeben, welche dann hier erscheinen sollen
 // 4 Hier ein Array erstellen und es in ObjectDisplayWithMap Komponente übergeben, welche dann hier erscheinen soll.
+/* Zu 3 & 4
+Sowohl das Objekt und der Array können auf der höchsten Ebene erstellt werden und müssen nur noch an die Komponente übergeben werden welche dieser verarbeitet.
+In meinem Beispiel sind hier Object und Array erstellt worden und werden durch Props an die Functione ObjectDisplay und ObjectDisplayWithMap weitergegeben.
+In der Komponente selber kann dann nachvollzogen werden wie die Werte aus dem Object oder dem Array gezogen werden. Im Object Array müssen nicht alle Werte angezeigt werden.
+*/
 
 // Object für Aufgabe 3
 const myObj = {

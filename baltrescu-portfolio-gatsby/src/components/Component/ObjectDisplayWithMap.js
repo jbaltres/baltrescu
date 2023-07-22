@@ -28,7 +28,7 @@ font-family: Avenir !important;
 background-color: white;
 `;
 
-console.log(array)
+
 console.log("Das ist der Array "+ array)
 console.log("Das ist der Autor von Object 2 "+array[1].author)
 
