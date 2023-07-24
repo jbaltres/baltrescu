@@ -8,6 +8,7 @@ import bild1 from "../../images/bild1.jpg";
 import DownloadKomponent from '../Download/Download';
 import FloatComponent from './FloatComponent';
 import Accordeon from './Accordeon1';
+import ScrollingText from './ScrollingText';
 
 // 1 Eine Komponente erstellen, bei welcher man als Props die Farbe definieren kann
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
@@ -147,6 +148,12 @@ function Components({bgcolortop}) {
       <Text> 6. Float Komponent in welcher ein Text um ein Bild herumlaufen kann</Text>
       <br />
         <Accordeon />
+        <br /><br />
+    </Wrapper2>
+    <Wrapper2>
+      <Text> 7. ScrollingText wie beim Aktienticker</Text>
+      <br />
+        <ScrollingText />
         <br /><br />
     </Wrapper2>
 
