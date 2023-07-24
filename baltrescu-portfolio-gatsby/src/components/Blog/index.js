@@ -112,6 +112,9 @@ export default function BlogInput() {
     const [author, setAuthor] = React.useState("");
     const [headline, setHeadline] = React.useState("");
     const [text, setText] = React.useState("");
+    const [newtext, setnewText] = React.useState("");
+    const [newauthor, setNewauthor] = React.useState("");
+    const [newheadline, setNewheadline] = React.useState("");
 
     const addToList = () => {
         Axios.post("http://localhost:3033/insert",{
@@ -149,6 +152,13 @@ export default function BlogInput() {
             
     
         },[])
+
+        const updateEntry = (id) =>{
+            Axios.put("http://localhost:3033/updateEntry",{
+                id: id,
+                newtext: newtext,
+            })
+        }
     
     const [count, setCount] = React.useState(1);
     

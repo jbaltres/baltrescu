@@ -3,7 +3,7 @@ import { styled } from 'styled-components';
 
 
 
-export default function ObjectDisplayWithMapFunction({array}) {
+export default function ObjectDisplayWithMapFunction({array, updateText}) {
 
     const Wrapper = styled.div`
     background-color: yellow;
@@ -28,6 +28,14 @@ font-family: Avenir !important;
 background-color: white;
 `;
 
+const DeleteButton = styled.button`
+
+`;
+
+const UpdateButton = styled.button`
+
+`;
+
 
 console.log("Das ist der Array "+ array)
 console.log("Das ist der Autor von Object 2 "+array[1].author)
@@ -43,6 +51,11 @@ console.log("Das ist der Autor von Object 2 "+array[1].author)
                 <li>Blogeintrag:<br/>{item.text}</li><br/><br/>
                 <li>Bewertung: <br/>{item.bewertung}</li><br/><br/>
             </Ol>
+            <Ol>
+              <li><textarea type="text"  placeholder="Text überschreiben..."/></li>
+              <UpdateButton onClick={() => updateText(item._id)}>Update des Eintrags</UpdateButton>
+            </Ol>
+            <DeleteButton>Eintrag löschen</DeleteButton>
             <Trenner/>
             </div>
         ))}

@@ -4,7 +4,8 @@ import InteractiveComponent from './InteractiveKomponent'
 import { styled } from 'styled-components';
 import ObjectDisplayFunction from './ObjectDisplay';
 import ObjectDisplayWithMapFunction from './ObjectDisplayWithMap';
-
+import bild1 from "../../images/bild1.jpg";
+import DownloadKomponent from '../Download/Download';
 
 // 1 Eine Komponente erstellen, bei welcher man als Props die Farbe definieren kann
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
@@ -126,6 +127,12 @@ function Components({bgcolortop}) {
         <Text>4. Inhalte aus einem Array, gefüllt mit Objekten anzeigen lassen</Text>
     <br/>
     <ObjectDisplayWithMapFunction array={myArr}/>
+    <br></br>
+    </Wrapper2>
+    <Wrapper2>
+      <Text>5. Eine Komponente mit Hilfe Dateien heruntergeladen werden können</Text>
+    <br/>
+      <DownloadKomponent file={bild1}/>
     <br></br>
     </Wrapper2>
     </>
