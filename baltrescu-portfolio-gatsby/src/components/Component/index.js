@@ -6,6 +6,7 @@ import ObjectDisplayFunction from './ObjectDisplay';
 import ObjectDisplayWithMapFunction from './ObjectDisplayWithMap';
 import bild1 from "../../images/bild1.jpg";
 import DownloadKomponent from '../Download/Download';
+import FloatComponent from './FloatComponent';
 
 // 1 Eine Komponente erstellen, bei welcher man als Props die Farbe definieren kann
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
@@ -134,6 +135,11 @@ function Components({bgcolortop}) {
     <br/>
       <DownloadKomponent file={bild1}/>
     <br></br>
+    </Wrapper2>
+    <Wrapper2>
+      <Text> 6. Float Komponent in welcher ein Text um ein Bild herumlaufen kann</Text>
+      <br />
+        <FloatComponent truetext="none" trueimg="flex" src={bild1}/>
     </Wrapper2>
     </>
   )
