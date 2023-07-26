@@ -2,7 +2,11 @@
 
 ## Wiederverwendbare Komponenten erstellen (mit Props)
 
+- [x] erledigt
+
 ## Menü
+
+- [x] erledigt
 
 ### Untermenü
 
@@ -10,9 +14,13 @@
 
 ## Footer
 
+- [x] erledigt
+
 ## Glowing
 
 ## Accordeon
+
+- [x] erledigt
 
 ## Stars
 

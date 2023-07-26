@@ -9,6 +9,8 @@ import DownloadKomponent from '../Download/Download';
 import FloatComponent from './FloatComponent';
 import Accordeon from './Accordeon1';
 import ScrollingText from './ScrollingText';
+import RadioButton from './RadioInput';
+import Checkbox from './Checkbox';
 
 // 1 Eine Komponente erstellen, bei welcher man als Props die Farbe definieren kann
 // 2 Eine Komponente erstellen, bei welcher man als Props die Farbe mit Use State und ternary definiert.
@@ -56,8 +58,6 @@ const obj3 = {
 
   const myArr = [obj1, obj2, obj3]
 
-
-
 const Ol = styled.ol`
 margin: 100px;
 font-family: Avenir !important;
@@ -80,7 +80,46 @@ const Text = styled.h2`
 font-size: 26px;
 `;
 
+
+
 function Components({bgcolortop}) {
+
+  // 8 Aufgabe: Die Radio Buttons bekommen Ihre Werte hier im State
+
+const [paymentMethod, setPaymentMethod] = React.useState("Feld1");
+
+console.log("RadioButtonWert"+paymentMethod)
+
+const radioChangeHandler = (e) => {
+  setPaymentMethod(e.target.value);
+};
+
+// 8 Aufgabe: Die Radio Buttons bekommen Ihre Werte hier im State
+const [checkbox, setCheckbox] = React.useState("Feld1Check");
+const [checkbox2, setCheckbox2] = React.useState("");
+
+console.log("RadioButtonWert"+checkbox+checkbox2)
+
+const checkboxChangeHandler = (e) => {
+  setCheckbox(e.target.value);
+};
+
+const checkboxChangeHandler2 = (e) => {
+  setCheckbox2(e.target.value);
+};
+
+const [isChecked, setIsChecked] = React.useState(false)
+
+const checkHandler = () => {
+  setIsChecked(!isChecked)
+}
+
+const [isChecked2, setIsChecked2] = React.useState(false)
+
+const checkHandler2 = () => {
+  setIsChecked2(!isChecked2)
+}
+
   return (
     <>
     <Ol>
@@ -156,7 +195,90 @@ function Components({bgcolortop}) {
         <ScrollingText />
         <br /><br />
     </Wrapper2>
+    <Wrapper2>
+      <Text> 8. RadioButtons die im Parent Ihre Werte bekommen</Text>
+      <br />
+      <div className="radio-btn-container">
+        <RadioButton
+          changed={radioChangeHandler}
+          id="1"
+          isSelected={paymentMethod === "Feld1"}
+          label="Feld1"
+          value="Feld1"
+        />
 
+        <RadioButton
+          changed={radioChangeHandler}
+          id="2"
+          isSelected={paymentMethod === "Feld2"}
+          label="Feld2Label"
+          value="Feld2"
+        />
+      </div>
+      {paymentMethod === "Feld2" && (
+        <input
+          style={{ marginTop: "10px" }}
+          type="text"
+          placeholder="Enter transaction id"
+        />
+      )}
+      <h2 style={{ marginTop: "25px" }}>
+        The selected radio button value is = {paymentMethod}
+      </h2>
+        <br /><br />
+    </Wrapper2>
+    <Wrapper2>
+      <Text> 9. Checkboxen</Text>
+      <br />
+      <div>
+      <input
+        type="checkbox"
+        id="checkbox1"
+        checked={isChecked}
+        onChange={checkHandler}
+      />
+      <label htmlFor="checkbox">I agree to Terms of Service </label>
+      <p>The checkbox is {isChecked ? "checked" : "unchecked"}</p>
+    </div>
+    <div>
+      <input
+        type="checkbox"
+        id="checkbox2"
+        checked={isChecked2}
+        onChange={checkHandler2}
+      />
+      <label htmlFor="checkbox2">I agree to Terms of Service 2</label>
+      <p>The checkbox is {isChecked2 ? "checked" : "unchecked"}</p>
+    </div>
+      <div>
+        <Checkbox
+          changed={checkboxChangeHandler}
+          id="c1"
+          
+          label="Feld1LabelCheck"
+          value="Feld1Check"
+        />
+
+        <Checkbox
+          changed={checkboxChangeHandler2}
+          id="c2"
+          
+          label="Feld2LabelCheck"
+          value="Feld2Check"
+        />
+      </div>
+      {paymentMethod === "Feld2" && (
+        <input
+          style={{ marginTop: "10px" }}
+          type="text"
+          placeholder="Enter transaction id"
+        />
+      )}
+      <h2 style={{ marginTop: "25px" }}>
+        Der Checkbox value is = {checkbox+checkbox2}
+      </h2>
+        <br /><br />
+    </Wrapper2>
     </>
   )
 }
